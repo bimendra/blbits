@@ -2427,9 +2427,9 @@ button.btn--primary,
 input[type="submit"].btn--primary, 
 input[type="reset"].btn--primary, 
 input[type="button"].btn--primary {
-    background: var(--color-btn-primary);
-    border-color: var(--color-btn-primary);
-    color: var(--color-btn-primary-text);
+    background: var(--color--primary);
+    border-color: var(--color--primary);
+    color: var(--color-gray-1);
 }
 
 .btn.btn--primary:hover, 
