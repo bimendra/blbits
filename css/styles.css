@@ -109,7 +109,7 @@
      * color-2(#eb5e55)
      * color-3(#f2d0a4)
      */
-    --color-1: hsla(345, 93%, 44%, 1);
+    --color-1: hsl(113, 100%, 38%);
     --color-2: hsla(4, 79%, 63%, 1);
     --color-3: hsla(34, 75%, 80%, 1);
 
@@ -118,7 +118,7 @@
     --color-1-lighter: hsla(345, 93%, 64%, 1);
     --color-1-light  : hsla(345, 93%, 54%, 1);
     --color-1-dark   : hsla(345, 93%, 34%, 1);
-    --color-1-darker : hsla(345, 93%, 24%, 1);
+    --color-1-darker : hsl(113, 100%, 20%);
     --color-2-lighter: hsla(4, 79%, 83%, 1);
     --color-2-light  : hsla(4, 79%, 73%, 1);
     --color-2-dark   : hsla(4, 79%, 53%, 1);
@@ -166,7 +166,7 @@
 
     /* text
      */
-    --color-text       : var(--color-gray-10);
+    --color-text       : var(--color-gray-8);
     --color-text-dark  : var(--color-white);
     --color-text-light : var(--color-gray-12);
     --color-placeholder: var(--color-gray-11);
@@ -177,8 +177,8 @@
     --color-btn-text              : var(--color-white);
     --color-btn-hover             : var(--color-white);
     --color-btn-hover-text        : var(--color-black);
-    --color-btn-primary           : var(--color-1);
-    --color-btn-primary-text      : var(--color-white);
+    --color--primary           : var(--color-1);
+    --color--primary-text      : var(--color-white);
     --color-btn-primary-hover     : var(--color-white);
     --color-btn-primary-hover-text: var(--color-black);
     --color-btn-stroke            : var(--color-white);
@@ -3116,13 +3116,11 @@ input::-moz-focus-inner {
     display: inline-block;
     margin: 0;
     padding: 0;
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
     -webkit-transition: all .5s;
     transition: all .5s;
     position: absolute;
     left: 8rem;
-    top: calc(50% - 2px);
+    top: calc(50% - 16px);
 }
 
 .s-header__logo a {
@@ -3160,7 +3158,7 @@ input::-moz-focus-inner {
 }
 
 .s-header__nav a {
-    color: var(--color-gray-8);
+    color: var(--color-gray-4);
 }
 
 .s-header__nav a:hover, .s-header__nav a:focus {
@@ -3486,7 +3484,7 @@ input::-moz-focus-inner {
 }
 
 .s-hero__bg {
-    background-image: url(../images/hero-bg.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2022/06/29/11/11/elizabeth-quay-7291475_1280.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -3497,7 +3495,7 @@ input::-moz-focus-inner {
     left: 36.5vw;
 }
 
-.s-hero__bg::after {
+/* .s-hero__bg::after {
     display: block;
     content: "";
     position: absolute;
@@ -3507,7 +3505,7 @@ input::-moz-focus-inner {
     height: 100%;
     background: var(--color-black);
     opacity: .25;
-}
+} */
 
 .s-hero__bg .gradient-overlay {
     display: block;
@@ -4702,8 +4700,7 @@ html.no-csstransitions .s-hero__content {
     padding-bottom: var(--vspace-2);
 }
 
-.s-contact__top .h6 {
-    color: black;
+.s-contact__top .h6 {    
     margin-top: 0;
     margin-bottom: var(--vspace-1);
 }
@@ -4766,8 +4763,7 @@ html.no-csstransitions .s-hero__content {
     color: white;
 }
 
-.s-footer .h6 {
-    color: black;
+.s-footer .h6 {    
     margin-top: 0;
 }
 
@@ -4805,7 +4801,7 @@ html.no-csstransitions .s-hero__content {
 .s-footer__block--end .btn {
     background-color: white;
     border: .2rem solid white;
-    color: black;
+    color: var(--color--primary);
     margin-right: 0;
     margin-bottom: var(--vspace-1);
 }
